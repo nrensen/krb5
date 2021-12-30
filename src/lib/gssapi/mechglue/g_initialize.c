@@ -529,7 +529,6 @@ updateMechList(void)
 	loadConfigFromRegistry(HKEY_CURRENT_USER, MECH_KEY);
 	loadConfigFromRegistry(HKEY_LOCAL_MACHINE, MECH_KEY);
 #else /* _WIN32 */
-	loadConfigFiles();
 #endif /* !_WIN32 */
 
 	/* Load any unloaded interposer mechanisms immediately, to make sure we
